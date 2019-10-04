@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  nginx-rtmp:
+    build:
+      context: "./image/"
+      labels:
+        com.nginx-rtmp.alpine.version: "3.10"
+      args:
+        ALPINE_VERSION: "3.10"
+    image: "dekart811/nginx-rtmp:latest"
