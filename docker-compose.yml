@@ -8,3 +8,5 @@ services:
       args:
         ALPINE_VERSION: "3.10"
     image: "dekart811/nginx-rtmp:latest"
+    ports:
+      - "1935:1935"
